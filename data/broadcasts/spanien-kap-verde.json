@@ -1,0 +1,25 @@
+{
+  "broadcast_id": "spanien-kap-verde",
+  "title": "Spanien - Kap Verde",
+  "source_audio": "data/audio/spanien-kap-verde.ac3",
+  "segments": [
+    {
+      "name": "pre_match",
+      "label": "Uppsnack",
+      "start": "00:01:48",
+      "end": "00:39:09"
+    },
+    {
+      "name": "halftime",
+      "label": "Halvtid",
+      "start": "01:36:24",
+      "end": "01:49:25"
+    },
+    {
+      "name": "post_match",
+      "label": "Efter match",
+      "start": "02:43:25",
+      "end": "03:15:02"
+    }
+  ]
+}

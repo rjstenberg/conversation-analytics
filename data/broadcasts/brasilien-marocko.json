@@ -1,0 +1,25 @@
+{
+  "broadcast_id": "brasilien-marocko",
+  "title": "Brasilien - Marocko",
+  "source_audio": "data/audio/brasilien-marocko.mp4",
+  "segments": [
+    {
+      "name": "pre_match",
+      "label": "Uppsnack",
+      "start": "00:03:37",
+      "end": "00:22:05"
+    },
+    {
+      "name": "halftime",
+      "label": "Halvtid",
+      "start": "01:19:06",
+      "end": "01:32:10"
+    },
+    {
+      "name": "post_match",
+      "label": "Efter match",
+      "start": "02:31:19",
+      "end": "02:58:58"
+    }
+  ]
+}

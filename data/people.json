@@ -1,0 +1,37 @@
+{
+    "Andre": { 
+    "role": "Programledare", 
+    "color": "#4E79A7",
+    "order": 1
+  },
+    "Therese": { 
+    "role": "Expert", 
+    "color": "#B07AA1",
+    "order": 2
+  },
+    "Jonas": { 
+    "role": "Expert", 
+    "color": "#59A14F",
+    "order": 3 
+  },
+    "Bojan": { 
+    "role": "Expert", 
+    "color": "#E15759",
+    "order": 4 
+  },
+    "Behrang": { 
+    "role": "Expert", 
+    "color": "#F28E2B",
+    "order": 5
+  },
+    "Magdalena": { 
+    "role": "Expert", 
+    "color": "#9C755F",
+    "order": 6 
+  },
+    "Inslag": { 
+    "role": "Inslag", 
+    "color": "#666666",
+    "order": 99 
+  }
+}
