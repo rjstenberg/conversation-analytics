@@ -1,0 +1,6 @@
+# Install with:
+# pip install -r requirements.txt
+
+mlx-whisper
+pyannote.audio
+matplotlib
