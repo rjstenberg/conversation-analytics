@@ -5,9 +5,10 @@ using automatic speech recognition, speaker diarization and statistical analysis
 
 Created by Rebecca Stenberg.
 
-Originally developed as a personal data analysis project to explore speaking patterns
-in Swedish football broadcasts. The project combines Whisper transcription, Pyannote
-speaker diarization and a custom analysis pipeline to produce interactive reports of
+Originally developed as a personal data analysis project to explore whether
+subjective viewer impressions of broadcast discussions can be measured
+quantitatively. The project combines MLX Whisper transcription, Pyannote speaker
+diarization and a custom analysis pipeline to generate interactive reports of
 studio conversations.
 
 ## Features
@@ -64,6 +65,9 @@ The generated report currently includes:
 Metrics are presented both for the full broadcast and for each analyzed segment.
 
 ## Installation
+
+- Python 3.11+
+- Apple Silicon Mac (recommended)
 
 Clone the repository:
 
@@ -181,9 +185,10 @@ Whisper occasionally produces hallucinated repetitions in noisy multilingual cli
 
 Built using:
 
-- Whisper
+- MLX Whisper
 - Pyannote
 - FFmpeg
+- yt-dlp
 
 ChatGPT was used during development for programming support, debugging,
 architectural discussions and code review.
