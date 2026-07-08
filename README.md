@@ -13,7 +13,7 @@ studio conversations.
 ## Features
 
 - Automatic extraction of predefined broadcast segments
-- Automatic speech transcription using Whisper
+- Fast on-device speech transcription using MLX Whisper (Apple Silicon)
 - Speaker diarization using Pyannote
 - Interactive speaker identification
 - Speaking time statistics
@@ -25,7 +25,7 @@ studio conversations.
 ## Example report
 
 Example analysis of **FIFA Fotbolls-VM 2026 – Brasilien vs Marocko**
-(originally broadcast by SVT).
+(originally broadcast by SVT on date).
 
 *(Insert screenshot of the report overview here.)*
 
@@ -68,31 +68,54 @@ Metrics are presented both for the full broadcast and for each analyzed segment.
 Clone the repository:
 
 ```bash
-git clone https://github.com/<username>/conversation-analytics.git
+git clone git@github.com:rjstenberg/conversation-analytics.git
 cd conversation-analytics
 ```
 
-Create a virtual environment:
+Create and activate a virtual environment:
 
 ```bash
 python -m venv .venv
 source .venv/bin/activate
 ```
 
-Install dependencies:
+### Python dependencies
+
+Install the required Python packages:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Install FFmpeg.
-Mac example:
+### External tools
+
+The project also requires:
+
+- FFmpeg
+- yt-dlp (optional, used by `new_broadcast.sh` to download publicly available broadcasts)
+
+Install on macOS using Homebrew:
 
 ```bash
-brew install ffmpeg
+brew install ffmpeg yt-dlp
 ```
 
-Configure Hugging Face access for Pyannote by creating a user access token and accepting the Pyannote model license.
+### Authentication
+
+Speaker diarization uses Pyannote, which requires a Hugging Face account.
+
+Before running the project:
+
+1. Create a Hugging Face account.
+2. Generate a User Access Token.
+3. Accept the license for the required Pyannote model.
+4. Authenticate locally:
+
+```bash
+huggingface-cli login
+```
+
+Paste your access token when prompted.
 
 ## Usage
 
