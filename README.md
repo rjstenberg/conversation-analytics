@@ -1,15 +1,19 @@
 # Conversation Analytics for Sports Broadcasts
 
-A Python tool for analyzing conversational dynamics in live sports studio broadcasts
-using automatic speech recognition, speaker diarization and statistical analysis.
+A Python tool for analysing conversational dynamics in audio using automatic 
+speech recognition, speaker diarization and statistical analysis. It can be used to examine speakers
+and how speaking time and turns are distributed across a conversation.
 
 Created by Rebecca Stenberg.
 
-Originally developed as a personal data analysis project to explore whether
-subjective viewer impressions of broadcast discussions can be measured
-quantitatively. The project combines MLX Whisper transcription, Pyannote speaker
-diarization and a custom analysis pipeline to generate interactive reports of
-studio conversations.
+Originally developed as a personal data analysis project to explore speaking patterns
+in swedish football studio broadcasts, including whether
+subjective viewer impressions of who dominates a discussion can be measured
+quantitatively. 
+
+The project combines MLX Whisper transcription, Pyannote speaker
+diarization and a custom analysis pipeline to generate statistics, speaker timelines
+and HTML reports.
 
 ## Features
 
@@ -23,12 +27,33 @@ studio conversations.
 - HTML report generation
 - Support for analyzing multiple broadcasts
 
-## Example report
+## Example analysis
 
-Example analysis of **FIFA Fotbolls-VM 2026 – Brasilien vs Marocko**
-(originally broadcast by SVT on date).
+Summary statistics from SVT studio broadcasts during the FIFA World Cup 2026.
 
-*(Insert screenshot of the report overview here.)*
+<p align="center">
+  <img src="assets/report-overview.png" width="900"/>
+  <br>
+  <em>Overview of analysed broadcasts and studio segment.</em>
+</p>
+
+<p align="center">
+  <img src="assets/report-overview.png" width="900"/>
+  <br>
+  <em>Speaking statistics for all participants, with interviews and prerecorded clips grouped into one category.</em>
+</p>
+
+<p align="center">
+  <img src="assets/report-overview.png" width="900"/>
+  <br>
+  <em>Speaking statistics for studio experts across the analysed broadcasts.</em>
+</p>
+
+<p align="center">
+  <img src="assets/halftime-timeline.png" width="900"/>
+  <br>
+  <em>Speaker timeline from the halftime studio discussion during Sweden-Tunisia 15 June 2026.</em>
+</p>
 
 ## Example workflow
 
@@ -164,7 +189,6 @@ data/reports/<broadcast_id>/broadcast-report.html
 
 Planned improvements include:
 
-- Cross-broadcast statistics
 - Longitudinal analysis across multiple broadcasts
 - Automatic speaker suggestions during speaker mapping
 - Additional conversational metrics
@@ -179,7 +203,12 @@ not included.
 Users are responsible for ensuring they have the right to access and analyze any
 media used with the software.
 
-Whisper occasionally produces hallucinated repetitions in noisy multilingual clips. The pipeline removes the most obvious cases but does not attempt to correct all transcription artifacts. Whisper language detection is used by default, since broadcasts may include Swedish studio talk, foreign-language interviews and mixed-language inserts.
+MLX Whisper occasionally produces hallucinated repetitions in noisy multilingual
+segments. The pipeline removes the most obvious cases but does not attempt to
+correct every transcription artifact.
+
+Automatic language detection is used by default since broadcasts may contain
+Swedish studio discussion, foreign-language interviews and multilingual inserts.
 
 ## Acknowledgements
 
