@@ -34,7 +34,7 @@ Summary statistics from SVT studio broadcasts during the FIFA World Cup 2026.
 <p align="center">
   <img src="assets/report-overview.png" width="900"/>
   <br>
-  <em>Overview of analysed broadcasts and studio segment.</em>
+  <em>Overview of analysed broadcasts and studio segments.</em>
 </p>
 
 <p align="center">
@@ -87,7 +87,7 @@ The generated report currently includes:
 - Words per minute
 - Speaker timeline visualization
 
-Metrics are presented both for the full broadcast and for each analyzed segment.
+Metrics are presented both for the full broadcast and for each analysed segment.
 
 ## Installation
 
@@ -185,11 +185,30 @@ Open:
 data/reports/<broadcast_id>/broadcast-report.html
 ```
 
+### 4. Generate an overview analysis
+
+After multiple broadcasts have been analyzed, generate the combined dataset and
+statistics across all broadcasts:
+
+```bash
+python analysis/world_cup.py
+python analysis/world_cup_statistics.py
+python reporting/world_cup_report.py
+```
+
+This creates a tournament-level analysis combining the individual broadcast
+results.
+
+Open the generated overview report:
+
+```text
+data/reports/world-cup/world-cup-report.html
+```
+
 ## Future work
 
 Planned improvements include:
 
-- Longitudinal analysis across multiple broadcasts
 - Automatic speaker suggestions during speaker mapping
 - Additional conversational metrics
 
