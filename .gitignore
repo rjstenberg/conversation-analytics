@@ -19,9 +19,12 @@ venv/
 # Generated project data
 # -------------------------
 data/audio/
+data/video/
 data/temp/
 data/transcripts/
 data/diarization/
 data/results/
 data/speaker_maps/
 data/reports/
+data/world_cup/
+data/broadcasts/
