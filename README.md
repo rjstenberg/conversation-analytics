@@ -25,7 +25,7 @@ and HTML reports.
 - Turn-based conversation metrics
 - Speaker timeline visualizations
 - HTML report generation
-- Support for analyzing multiple broadcasts
+- Support for analysing multiple broadcasts
 
 ## Example analysis
 
@@ -162,7 +162,7 @@ The script will:
 
 Afterwards, edit the generated JSON file and specify the start and end times for each segment.
 
-### 2. Analyze the broadcast
+### 2. Analyse the broadcast
 
 ```bash
 ./scripts/run_broadcast.sh <broadcast_id>
@@ -187,7 +187,7 @@ data/reports/<broadcast_id>/broadcast-report.html
 
 ### 4. Generate an overview analysis
 
-After multiple broadcasts have been analyzed, generate the combined dataset and
+After multiple broadcasts have been analysed, generate the combined dataset and
 statistics across all broadcasts:
 
 ```bash
@@ -214,12 +214,9 @@ Planned improvements include:
 
 ## Notes
 
-This repository contains the analysis software and example analysis output only.
-
+This repository contains the analysis software and example analysis output only. 
 Broadcast media, extracted audio segments and speech transcripts are intentionally
-not included.
-
-Users are responsible for ensuring they have the right to access and analyze any
+not included. Users are responsible for ensuring they have the right to access and analyse any
 media used with the software.
 
 MLX Whisper occasionally produces hallucinated repetitions in noisy multilingual
