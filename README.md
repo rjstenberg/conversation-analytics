@@ -32,19 +32,19 @@ and HTML reports.
 Summary statistics from SVT studio broadcasts during the FIFA World Cup 2026.
 
 <p align="center">
-  <img src="assets/report-overview.png" width="900"/>
+  <img src="assets/summary-overview.png" width="900"/>
   <br>
   <em>Overview of analysed broadcasts and studio segments.</em>
 </p>
 
 <p align="center">
-  <img src="assets/report-overview.png" width="900"/>
+  <img src="assets/summary-all-speakers.png" width="900"/>
   <br>
   <em>Speaking statistics for all participants, with interviews and prerecorded clips grouped into one category.</em>
 </p>
 
 <p align="center">
-  <img src="assets/report-overview.png" width="900"/>
+  <img src="assets/summary-experts.png" width="900"/>
   <br>
   <em>Speaking statistics for studio experts across the analysed broadcasts.</em>
 </p>
