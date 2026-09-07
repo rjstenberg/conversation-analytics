@@ -1,7 +1,7 @@
 # Conversation Analytics for Sports Broadcasts
 
 A Python tool for analysing conversational dynamics in audio using automatic 
-speech recognition, speaker diarization and statistical analysis. It can be used to examine speakers
+speech recognition, speaker diarisation and statistical analysis. It can be used to examine speakers
 and how speaking time and turns are distributed across a conversation.
 
 Created by Rebecca Stenberg.
@@ -12,18 +12,18 @@ subjective viewer impressions of who dominates a discussion can be measured
 quantitatively. 
 
 The project combines MLX Whisper transcription, Pyannote speaker
-diarization and a custom analysis pipeline to generate statistics, speaker timelines
+diarisation and a custom analysis pipeline to generate statistics, speaker timelines
 and HTML reports.
 
 ## Features
 
 - Automatic extraction of predefined broadcast segments
 - Fast on-device speech transcription using MLX Whisper (Apple Silicon)
-- Speaker diarization using Pyannote
+- Speaker diarisation using Pyannote
 - Interactive speaker identification
 - Speaking time statistics
 - Turn-based conversation metrics
-- Speaker timeline visualizations
+- Speaker timeline visualisations
 - HTML report generation
 - Support for analysing multiple broadcasts
 
@@ -64,7 +64,7 @@ Segment extraction
     ↓
 Speech transcription
     ↓
-Speaker diarization
+Speaker diarisation
     ↓
 Interactive speaker mapping
     ↓
@@ -85,7 +85,7 @@ The generated report currently includes:
 - Median speaking turn
 - Longest speaking turn
 - Words per minute
-- Speaker timeline visualization
+- Speaker timeline visualisation
 
 Metrics are presented both for the full broadcast and for each analysed segment.
 
@@ -131,7 +131,7 @@ brew install ffmpeg yt-dlp
 
 ### Authentication
 
-Speaker diarization uses Pyannote, which requires a Hugging Face account.
+Speaker diarisation uses Pyannote, which requires a Hugging Face account.
 
 Before running the project:
 
@@ -172,7 +172,7 @@ The pipeline automatically performs:
 
 - segment extraction
 - transcription
-- speaker diarization
+- speaker diarisation
 - interactive speaker mapping
 - statistical analysis
 - report generation
