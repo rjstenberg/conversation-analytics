@@ -224,7 +224,7 @@ segments. The pipeline removes the most obvious cases but does not attempt to
 correct every transcription artifact.
 
 Automatic language detection is used by default since broadcasts may contain
-Swedish studio discussion, foreign-language interviews and multilingual inserts.
+Swedish studio discussion, interviews in other languages and multilingual inserts.
 
 ## Acknowledgements
 
